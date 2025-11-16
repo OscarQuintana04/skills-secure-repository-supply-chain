@@ -1,10 +1,10 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/code/src/AttendeeSite"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "nuget"
+    directory: "/code/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
-      - "automerge"
